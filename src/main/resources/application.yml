@@ -1,0 +1,29 @@
+server:
+  port: 8183
+
+application:
+  jwt:
+    secret: RVRiODJyOWs2a0RIWGZSbWFLNVFrVWQ0eWZHQ2pXZGUzNkI5UWFoZUNndWp4RDdQWXlQdUZQQUg3NjgzeTRMQzJuNlBuTVFrZ1pTVEtobnM3UlZyRmdHVTVxUWVKY0tyTEpHcHVBSEprVlRrMmhSdENwUVkySzhHSHB4eUVwd3k4VU5qZzNmM1BMdFJaMzl0TDhwM216RlU1S1hKd2twYnNiRmNUWExTM3ZYNlFaNFltVHlZNWozdTVaYlVXSDZyVjVjYjg2aHl0UVZCSHB6ZXZrN3d6NkRyOEhTMnREV1VlWHFhNFlFODMyQk05bTVUTW1qUWQ0UlNCZ2s1QVNMeA==
+    expired: 3600000
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:company_task;DB_CLOSE_DELAY=-1
+    username: h2
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: create
+  h2:
+    console.enabled: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: uzkassatasknoreply@gmail.com
+    password: owmjzbaukdvpjqxp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
